@@ -170,4 +170,6 @@ Example: "/d(?=r)" the characer "d" will only match if the "?" (preceeding chara
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hi, my name is Mike Diamond, a full stack developer student for the UCF Coding Bootcamp. I created this tutorial to explain how regex systems work to match and filter what is located within strings. 
+
+Link to my github: https://github.com/mikeydgithub
