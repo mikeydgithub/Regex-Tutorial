@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Title Gist-Tutorial
 
-Introductory paragraph (replace this with your text)
+A tutorial explaning how characters match in an email address. There is also other examples of other regex expressions included as well.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+* Matching an Email. `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+* Example Email `test22_cake@fortytwo.net`
 
 ## Table of Contents
 
@@ -22,9 +24,30 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ## Regex Components
 
-* Matching an Email. `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+* `/^([a-z0-9_\.-]+)`&ndash; `^` Starts the expression. `[a-z]`matches lower case letters a through z.`[0-9]` numbers match between 0 and 9.`[_\.-]+` matches underscores, periods, dashes, and characters precedding.
 
-* Example Email `test22_cake@fortytwo.net`
+```md
+`test22_cake`
+```
+
+* `@` Matches @ character.
+
+```md
+@
+```
+
+* `([\da-z\.-]+)`&ndash; `[\da-z]` matches any digit number(0-9) and letters that range (a-z) `[\.-]+` escaped character matches periods, dashes, and the precedding characters. 
+
+```md
+`fortytwo`
+```
+
+* `\.([a-z\.]{3})$/`&ndash; Matches a character between the range of (a-z) and can match words that preceed that first character that is up to 3, 6, or 8 characters exactly.  The `$` marks the end of the regular expression.
+
+```md
+`.net`
+```
+
 
 ### Anchors
 
